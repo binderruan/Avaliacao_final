@@ -1,0 +1,20 @@
+<h1>Criar Professor</h1>
+<form action="/professores/create" method="POST" enctype="multipart/form-data">
+    <div class="form">
+        <label for="nome">Nome do professor:</label>
+        <input type="text" name="nome" placeholder="Digite o nome do curso">
+    </div>
+    <div class="form">
+        <label for="resumo">Materia:</label>
+        <textarea name="resumo"></textarea>
+    </div>
+    <div class="form">
+        <label for="descricao">Formação:</label>
+        <textarea name="descricao"></textarea>
+    </div>
+    <div class="form">
+        <label for="imagem">Imagem:</label>
+        <input type="file" name="imagem" />
+    </div>
+    <input type="submit" class="button" value="Criar">
+</form>

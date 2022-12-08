@@ -1,0 +1,23 @@
+<main>
+
+    <h1>Editar Curso</h1>
+    <form action="/cursos/edit" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="id" value={{curso._id}}>
+        <div class="form">
+            <label for="nome">Nome do curso:</label>
+            <input type="text" name="nome" placeholder="Digite o nome do curso" value="{{curso.nome}}">
+        </div>
+        <div class="form">
+            <label for="atribuicao">atribuicao:</label>
+            <textarea name="atribuicao">{{curso.atribuicao}}</textarea>
+        </div>
+        <div class="form">
+            <label for="imagem">Imagem:</label>
+            <input type="file" name="imagem" />
+
+            <br><br><input type="submit" class="button" value="Salvar">
+        </div>
+
+    </form>
+
+</main>

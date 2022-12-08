@@ -1,0 +1,13 @@
+<main>
+  <h1>{{curso.name}}</h1>
+  <img class="curso" src="/img/professor/{{professor.imagem}}">
+
+  <div class="detalhes">
+    <p><span>Descrição:</span> {{professor.descricao}}
+
+    <form action="/professores/remove/{{professor._id}}" method="POST">
+      <input type="submit" class="detalhes" value="Excluir ✖">
+    </form>
+
+  </div>
+</main>

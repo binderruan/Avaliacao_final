@@ -1,0 +1,17 @@
+<a href="/cursos/create" class="button">Novo</a>
+<main>
+
+  {{#each cursos}}
+
+  <div class="cargo">
+    <img src="/img/curso/{{this.imagem}}" alt="{{this.nome}}">
+    <p class="name">{{nome}}</p>
+    <br>
+    <a class="detalhesin" href="/cursos/{{_id}}">🛈</a>
+    <a class="detalhesin" href="/cursos/edit/{{this._id}}">✎</a>
+  </div>
+
+  {{/each}}
+
+
+</main>

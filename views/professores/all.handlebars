@@ -1,0 +1,17 @@
+<a href="/professores/create" class="button">Novo</a>
+<main>
+
+  {{#each professores}}
+
+  <div class="cargo">
+    <img src="/img/professor/{{this.imagem}}" alt="{{this.nome}}">
+    <p class="name">{{nome}}</p>
+    <br>
+    <a class="detalhesin" href="/professores/{{_id}}">🛈</a>
+    <a class="detalhesin" href="/professores/edit/{{this._id}}">✎</a>
+  </div>
+
+  {{/each}}
+
+
+</main>
